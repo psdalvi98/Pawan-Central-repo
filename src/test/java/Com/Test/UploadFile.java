@@ -23,18 +23,22 @@ public class UploadFile {
 		file.sendKeys("C:\\Users\\lenovo\\Desktop\\Pawan Resume\\File1\\ass.doc");
 		Thread.sleep(4000);
 		WebElement Checkbox=driver.findElement(By.xpath("//input[@type='checkbox']"));
-		Checkbox.click();
+		Checkbox.click();		
 		
+}
+	@Test
+	public void UploadFile2() throws Exception {
+		
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://demo.guru99.com/test/upload/");
+		driver.manage().window().maximize();
+		
+		WebElement file=driver.findElement(By.xpath("//input[@type='file']"));
+		file.sendKeys("C:\\Users\\lenovo\\Desktop\\Pawan Resume\\File1\\ass.doc");
 		Thread.sleep(4000);
-		WebElement Submit=driver.findElement(By.xpath("//button[@id='submitbutton']"));
-		Submit.click();
-		Thread.sleep(4000);
-		WebElement Submit=driver.findElement(By.xpath("//button[@id='submitbutton']"));
-		Submit.click();
-		Thread.sleep(4000);
-		WebElement Submit=driver.findElement(By.xpath("//button[@id='submitbutton']"));
-		Submit.click();
-
+		WebElement Checkbox=driver.findElement(By.xpath("//input[@type='checkbox']"));
+		Checkbox.click();		
 		
 }
 }
