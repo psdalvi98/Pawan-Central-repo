@@ -28,6 +28,12 @@ public class UploadFile {
 		Thread.sleep(4000);
 		WebElement Submit=driver.findElement(By.xpath("//button[@id='submitbutton']"));
 		Submit.click();
+		Thread.sleep(4000);
+		WebElement Submit=driver.findElement(By.xpath("//button[@id='submitbutton']"));
+		Submit.click();
+		Thread.sleep(4000);
+		WebElement Submit=driver.findElement(By.xpath("//button[@id='submitbutton']"));
+		Submit.click();
 
 		
 }
